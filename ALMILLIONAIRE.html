@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://i.im.ge/2024/01/11/3Y9eQx.Logo-png.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: gray;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #dab164;
+}
+
+/* nav a:visited {
+    color: white;
+} */
+
+section {
+    padding: 200px 150px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main {
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    /* background-image: url(Logo/Untitled-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+.main span{
+    font-size: 2em;
+    color: #dab164;
+}
+
+.button {
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: #dab164;
+    margin: 20px 0;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: black;
+    transition: 0.7s ease;
+    
+}
+
+.button:hover {
+    transform: scale(1.1);
+    border: 2px solid gray;
+    color: gray;
+}
+
+.button-review {
+    border: 2px solid #dab164;
+    border-radius: 30px;
+    background-color: gray;
+    margin: 20px 0;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: #dab164;
+    transition: 0.7s ease;
+}
+
+.button-review:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+    color: black;
+}
+
+.intro .social-icons a {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+    position: relative;
+    top: 60px;
+    font-size: 25px;
+}
+
+.social-icons a:hover {
+    color: #bdbdbd;
+}
+
+.big-logo {
+    display: flex;    
+}
+
+.big-logo img {
+    position: fixed;
+    z-index: -1;
+    bottom: 5px;
+    right: 20px;
+    width: 40%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #dab164;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 30em;
+    /* box-shadow: 0 5px 25px rgba(1 1 1 / 15%); */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    transition: 0.7s ease;
+}
+
+.card a, .card a:active, .card a:focus, .card a:hover, .card a:visited {
+    /* margin: auto; */
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #dab164;
+    font-size: 12em;
+    text-align: center;
+}
+
+.det {
+    text-align: center;
+}
+
+.contact {
+    background-color: gray;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 8px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .icon{
+        font-size: 5em;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .card a{
+        font-size: 150%;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+    </style>
+    <title>AL-MILLIONAIRE</title>
+</head>
+<body>
+    <header>
+        <a href="https://almillionaire.ae/" class="logo" target="_blank"><img src="https://i.im.ge/2024/01/11/3Y9eQx.Logo-png.png"></a>
+        <nav>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="main">
+        <div class="intro">
+            <h2>Welcome to <br><span>AL-Millionaire</span> </h2>
+            <h2>for the American car auctions</h2>
+            <a href="#contact" class="button">Contact us</a>
+            <a href="https://g.page/r/CWuf8K7xynjpEB0/review" class="button-review" target="_blank">Give us a review</a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/almillionair007/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/almillionair_uae/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://snapchat.com/t/GzrQHbYg" target="_blank"><i class="fab fa-snapchat"></i></a>
+                <a href="https://maps.app.goo.gl/xXRKVRhJ1h1Ff8vH8" target="_blank"><i class="fab fa-google"></i></a>
+                <a href="https://almillionaire.ae/" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+        <div class="big-logo"><img src="https://i.im.ge/2024/01/11/3Y9eQx.Logo-png.png"></div>
+        
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="title">Contact us</h2>
+            <div class="cards">   
+                <!-- <div class="card">
+                    <a href="https://wa.me/" target="_blank">
+                        <div class="icon">
+                            <i class="fa fa-gavel"></i>
+                        </div>
+                        <div class="det">
+                            <h3>
+                                WhatsApp hussain
+                            </h3>
+                            <p>
+                                to join the auction
+                            </p>
+                        </div>
+                    </a> 
+                </div> -->
+                <div class="card">
+                    <a href="https://wa.me/+971561161427" target="_blank">
+                        <div class="icon">
+                        <i class="fa fa-gavel"></i>
+                        </div>
+                        <div class="det">
+                        <h3>
+                            WhatsApp Abdullah
+                        </h3>
+                        <p>
+                            to join the auction
+                        </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://wa.me/+971544696911" target="_blank">
+                        <div class="icon">
+                        <i class="fa fa-gavel"></i>
+                        </div>
+                        <div class="det">
+                        <h3>
+                            WhatsApp Mohammed
+                        </h3>
+                        <p>
+                            to join the auction
+                        </p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="card">
+                    <a href="https://wa.me/+971547405644" target="_blank">
+                        <div class="icon">
+                    <i class="fa fa-ship" aria-hidden="true"></i>
+                        </div>
+                        <div class="det">
+                    <h3>
+                        WhatsApp Masum 
+                    </h3>
+                    <p>
+                        to check the car status
+                    </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+</body>
+</html>
